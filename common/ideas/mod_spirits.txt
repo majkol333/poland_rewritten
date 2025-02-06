@@ -1,0 +1,11 @@
+ideas = {
+	country = {
+		POL_jp2 = {
+            picture = IRE_catholic
+            modifier = {
+                monthly_population = 0.02
+                out_of_supply_factor = -0.15
+            }
+        }
+	}
+}
