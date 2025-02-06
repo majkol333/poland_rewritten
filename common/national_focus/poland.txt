@@ -1,0 +1,35 @@
+focus_tree = {
+	id = polish_focus
+	country = {
+		base = 0
+
+		modifier = {
+			add = 10
+			tag = POL
+		}
+	}
+
+	default = no
+
+	# Focuses
+	focus = {
+		id = POL_bialystok_earthquakes
+		icon = GFX_goal_unknown
+		cost = 5
+		x = 1
+		y = 0
+		available = {
+			owns_state = 97
+		}
+	}
+	focus = {
+		id = POL_bydgoszcz_unrest
+		icon = GFX_goal_unknown
+		x = 1
+		y = 1
+		cost = 5
+		prerequisite = {
+			focus = POL_bialystok_earthquakes
+		}
+	}
+}
