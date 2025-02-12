@@ -31,6 +31,9 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_bialystok_earthquakes
 		}
+		available = {
+			owns_state = 807
+		}
 	}
 	focus = {
 		id = POL_krakow_warlords
@@ -41,50 +44,62 @@ focus_tree = {
 		prerequisite = {
 			focus = POL_bydgoszcz_unrest
 		}
+		available = {
+			owns_state = 88
+		}
 	}
-	# ------
 	focus = {
 		id = POL_wadowice_miracle
 		icon = GFX_goal_unknown
-		x = 0
+		x = -1
 		y = 2
 		cost = 5
 		prerequisite = {
 			focus = POL_krakow_warlords
+		}
+		available = {
+			owns_state = 88
 		}
 	}
 	focus = {
 		id = POL_lwow_fire
 		icon = GFX_local_unknown
-		x = 0
+		x = -1
 		y = 3
 		cost = 5
 		prerequisite = {
 			focus = POL_wadowice_miracle
 		}
+		available = {
+			owns_state = 91
+		}
 	}
-	# ------
 	focus = {
 		id = POL_progerman_danzig
 		icon = GFX_local_unknown
-		x = 2
+		x = 3
 		y = 2
 		cost = 5
 		prerequisite = {
 			focus = POL_krakow_warlords
 		}
+		available = {
+			owns_state = 85
+		}
 	}
 	focus = {
 		id = POL_poznan_german_spies
 		icon = GFX_local_unknown
-		x = 2
+		x = 3
 		y = 3
 		cost = 5
 		prerequisite = {
 			focus = POL_progerman_danzig
 		}
+		available = {
+			owns_state = 86
+		}
 	}
-	# ------
 	focus = {
 		id = POL_jaszczur_focus
 		icon = GFX_local_unknown
@@ -93,14 +108,31 @@ focus_tree = {
 		cost = 5
 		prerequisite = {
 			focus = POL_lwow_fire
+		}
+		prerequisite = {
 			focus = POL_krakow_warlords
+		}
+		prerequisite = {
 			focus = POL_poznan_german_spies
 		}
 	}
 	focus = {
 		id = POL_warsaw_protests
 		icon = GFX_local_unknown
-		x = 0
+		x = -1
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = POL_jaszczur_focus
+		}
+		available = {
+			owns_state = 10
+		}
+	}
+	focus = {
+		id = POL_sejm_time_machine
+		icon = GFX_local_unknown
+		x = 1
 		y = 5
 		cost = 5
 		prerequisite = {
@@ -108,9 +140,22 @@ focus_tree = {
 		}
 	}
 	focus = {
+		id = POL_lodz_army_revolt
+		icon = GFX_local_unknown
+		x = 3
+		y = 5
+		cost = 5
+		prerequisite = {
+			focus = POL_jaszczur_focus
+		}
+		available = {
+			owns_state = 87
+		}
+	}
+	focus = {
 		id = POL_agrarian_untrust
 		icon = GFX_local_unknown
-		x = -1
+		x = -3
 		y = 6
 		cost = 5
 		prerequisite = {
@@ -120,54 +165,110 @@ focus_tree = {
 	focus = {
 		id = POL_toxic_vistula
 		icon = GFX_local_unknown
-		x = 0
-		y = 10
+		x = -1
+		y = 6
 		cost = 5
 		prerequisite = {
 			focus = POL_warsaw_protests
 		}
 	}
 	focus = {
-		id = POL_lodz_army_revolt
-		icon = GFX_local_unknown
-		x = 1
-		y = 11
-		cost = 5
-		prerequisite = {
-			focus = POL_toxic_vistula
-		}
-	}
-	focus = {
-		id = POL_sejm_time_machine
-		icon = GFX_local_unknown
-		x = 1
-		y = 12
-		cost = 5
-		prerequisite = {
-			focus = POL_lodz_army_revolt
-		}
-	}
-	focus = {
 		id = POL_time_machine_coup
 		icon = GFX_local_unknown
 		x = 1
-		y = 13
+		y = 6
 		cost = 5
 		prerequisite = {
 			focus = POL_sejm_time_machine
+		}
+		prerequisite = {
+			focus = POL_lodz_army_revolt
 		}
 	}
 	focus = {
 		id = POL_sejm_final_meeting
 		icon = GFX_local_unknown
 		x = 1
-		y = 14
+		y = 7
 		cost = 5
+		prerequisite = {
+			focus = POL_agrarian_untrust
+		}
+		prerequisite = {
+			focus = POL_toxic_vistula
+		}
 		prerequisite = {
 			focus = POL_time_machine_coup
 		}
+
+		modifier = {
+			event = POL_mod_events.1
+		}
+	}
+
+	# ------
+	# PRAWICA
+	# ------
+	focus = {
+		id = POL_right_option
+		icon = GFX_local_unknown
+		x = -1
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = POL_sejm_final_meeting
+		}
 	}
 	# ------
-	# ROZGAŁĘZIENIE
+	# CENTRUM
 	# ------
+	focus = {
+		id = POL_centre_option
+		icon = GFX_local_unknown
+		x = 1
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = POL_sejm_final_meeting
+		}
+	}
+	# ------
+	# LEWICA
+	# ------
+	focus = {
+		id = POL_left_option
+		icon = GFX_local_unknown
+		x = 3
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = POL_sejm_final_meeting
+		}
+	}
+	# ------
+	# ANARCHIA
+	# ------
+	focus = {
+		id = POL_anarchy_option
+		icon = GFX_local_unknown
+		x = 5
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = POL_sejm_final_meeting
+		}
+	}
+	# ------
+	# PUTINIZM
+	# ------
+	focus = {
+		id = POL_cursed_option
+		icon = GFX_local_unknown
+		x = 7
+		y = 8
+		cost = 5
+		prerequisite = {
+			focus = POL_sejm_final_meeting
+		}
+	}
 }
