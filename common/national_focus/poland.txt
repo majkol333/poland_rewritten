@@ -201,8 +201,8 @@ focus_tree = {
 			focus = POL_time_machine_coup
 		}
 
-		modifier = {
-			event = POL_mod_events.1
+		completion_reward = {
+			country_event = { id = POL_mod_events.1 }
 		}
 	}
 
