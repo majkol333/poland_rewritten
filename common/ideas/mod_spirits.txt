@@ -1,10 +1,33 @@
 ideas = {
 	country = {
 		POL_jp2 = {
-            picture = IRE_catholic
             modifier = {
                 monthly_population = 0.02
                 out_of_supply_factor = -0.15
+            }
+        }
+        POL_toxic_vistula_idea = {
+            modifier = {
+                construction_speed = -0.10
+            }
+            allowed = {
+                always = yes
+            }
+            removal_duration = 100
+        }
+        POL_sejmersi = {
+            modifier = {
+                political_power_cost = 0.05
+                stability_factor = -0.10
+                political_advisor_cost_factor = 0.10
+            }
+        }
+        POL_unloyal_army = {
+            modifier = {
+                offence = -0.15
+                army_org = -10
+                command_power_gain = -0.05
+                army_chief_cost_factor = 0.15
             }
         }
 	}

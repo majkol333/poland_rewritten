@@ -7,28 +7,80 @@ country_event = {
 	picture = GFX_report_event_generic_read_write
 	fire_only_once = yes
 
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_sejm_final_meeting
+	}
+
 	option = {
 		name = POL_mod_events.1.o1
-		effect = {
-			add_focus = POL_right_option
+		hidden_effect = {
+			focus =  { id = POL_right_option }			
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o2
-		effect = {
-			add_focus = POL_centre_option
+		hidden_effect = {
+			focus = { id = POL_centre_option }
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o3
-		effect = {
-			add_focus = POL_left_option
+		hidden_effect = {
+			focus = { id = POL_left_option }
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o4
+		hidden_effect = {
+			focus = { id = POL_anarchy_option }
+		}
+	}
+}
+country_event = {
+	id = POL_mod_events.2
+	title = POL_mod_events.2.t
+	desc = POL_mod_events.2.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_time_machine_coup
+	}
+
+	option = {
+		name = POL_mod_events.2.o1
+		hidden_effect = {
+			set_politics = {
+				ruling_party = democratic
+			}
+		}
+		hidden_effect = {
+			start_civil_war = {
+				ideology = neutrality
+				size = 0.5
+			}
+		}
+		
+	}
+}
+country_event = {
+	id = POL_mod_events.3
+	title = POL_mod_events.3.t
+	desc = POL_mod_events.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+		has_completed_focus = POL_toxic_vistula
+	}
+
+	option = {
+		name = POL_mod_events.3.o1
 		effect = {
-			add_focus = POL_anarchy_option
+			add_ideas = POL_toxic_vistula_idea
 		}
 	}
 }
