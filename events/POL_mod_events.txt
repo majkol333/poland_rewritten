@@ -14,26 +14,26 @@ country_event = {
 
 	option = {
 		name = POL_mod_events.1.o1
-		hidden_effect = {
-			focus =  { id = POL_right_option }			
+		effect = {
+			complete_national_focus  =  { id = POL_right_option }			
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o2
-		hidden_effect = {
-			focus = { id = POL_centre_option }
+		effect = {
+			complete_national_focus  = { id = POL_centre_option }
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o3
-		hidden_effect = {
-			focus = { id = POL_left_option }
+		effect = {
+			complete_national_focus  = { id = POL_left_option }
 		}
 	}
 	option = {
 		name = POL_mod_events.1.o4
-		hidden_effect = {
-			focus = { id = POL_anarchy_option }
+		effect = {
+			complete_national_focus = { id = POL_anarchy_option }
 		}
 	}
 }
@@ -81,6 +81,24 @@ country_event = {
 		name = POL_mod_events.3.o1
 		effect = {
 			add_ideas = POL_toxic_vistula_idea
+		}
+	}
+}
+country_event = {
+	id = POL_mod_events.sejm
+	title = POL_mod_events.sejm.t
+	desc = POL_mod_events.3.d
+	picture = GFX_report_event_generic_read_write
+	fire_only_once = yes
+
+	trigger = {
+		tag = POL
+	}
+
+	option = {
+		name = POL_mod_events.sejm.o1
+		effect = {
+
 		}
 	}
 }

@@ -1,6 +1,0 @@
-characters = {
-	POL_leader_sejm = {
-		name = "Sejm RP"
-		ideology = democratic
-	}
-}
