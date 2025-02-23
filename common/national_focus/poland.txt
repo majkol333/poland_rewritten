@@ -339,6 +339,15 @@ focus_tree = {
 			focus = POL_konfa_option
 			focus = POL_kamraci_option
 		}
+		completion_reward = {
+			promote_character = POL_andzrej_lepper
+			set_party_name = {
+				ideology = communism
+				long_name = "Samoobrona Rzeczypospolitej Polskiej"
+				name = "Samoobrona RP"
+			}
+			set_politics = { ruling_party = communism }
+		}
 
 	}
 	focus = {
