@@ -58,6 +58,9 @@ characters = {
 			traits = { unruly_falangist }
 		}
 	}
+
+	# MOD COUNTRY LEADERS
+
 	POL_sejm = {
 		name="Sejm RP"
 		portraits = {
@@ -69,6 +72,55 @@ characters = {
 			id=-1
 		}
 	}
+
+	POL_andzrej_lepper = {
+		name="Andrzej Lepper"
+		portraits = {
+		}
+		country_leader = {
+			ideology = lepperism
+			traits = {}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_antoni_macierewicz = {
+		name="Antoni Macierewicz"
+		portraits = {
+		}
+		country_leader = {
+			ideology = kaczism
+			traits = {}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_mateusz_morawiecki = {
+		name="Mateusz_Morawiecki"
+		portraits = {
+		}
+		country_leader = {
+			ideology = lepperism
+			traits = {}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_jarosław_kaczynski = {
+		name="Jarosław Kaczyński"
+		portraits = {
+		}
+		country_leader = {
+			ideology = kaczism
+			traits = {}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
 	POL_boleslaw_wieniawa_glugoszowski = {
 		name=POL_boleslaw_wieniawa_glugoszowski
 		portraits = {
