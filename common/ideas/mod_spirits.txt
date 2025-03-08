@@ -30,5 +30,45 @@ ideas = {
                 army_chief_cost_factor = 0.15
             }
         }
+        POL_broken_justice_system = {
+            modifier = {
+                political_power_gain = -0.3
+                monthly_population = -0.05
+                stability_factor = -0.25
+                stability_weekly = -0.01
+                drift_defence_factor = -0.3
+                surrender_limit = -0.15
+            }
+        }
+        POL_corrupt_justice_system = {
+            modifier = {
+                political_power_gain = 0.3
+                monthly_population = -0.1
+                stability_factor = -0.3
+                drift_defence_factor = 0.1
+            }
+        }
+        POL_fixed_justice_system = {
+            modifier = {
+                stability_factor = 0.1
+                drift_defence_factor = -0.1
+                surrender_limit = 0.2
+            }
+        }
+        POL_private_lawyers = {
+            modifier = {
+                political_power_gain = 0.05
+                stability_factor = -0.1
+                consumer_goods_factor = -0.05
+                surrender_limit = 0.1
+            }
+        }
+        POL_popis_delegalized = {
+            modifier = {
+                stability_factor = 0.1
+                democratic_drift = -0.1
+                democratic_acceptance = -30
+            }
+        }
 	}
 }

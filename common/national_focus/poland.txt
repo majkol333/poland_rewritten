@@ -35,7 +35,6 @@ focus_tree = {
 				ideology = neutrality
 				popularity = -0.1
 			}
-			promote_character = POL_sejm 
 		}
 	}
 	focus = {
@@ -311,9 +310,6 @@ focus_tree = {
 		x = -15
 		y = 8
 		cost = 0
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_sejm_final_meeting
 		}
@@ -325,12 +321,15 @@ focus_tree = {
 		}
 
 	}
+
+	# LEPPER
+
 	focus = {
 		id = POL_lepper_option
 		icon = GFX_local_unknown
 		x = -19
 		y = 9
-		cost = 5
+		cost = 2.9
 		prerequisite = {
 			focus = POL_right_option
 		}
@@ -347,9 +346,138 @@ focus_tree = {
 				name = "Samoobrona RP"
 			}
 			set_politics = { ruling_party = communism }
+			add_popularity = {
+				ideology = communism
+				popularity = 0.2
+			}
+			add_stability = 0.10
 		}
 
 	}
+	focus = {
+		id = POL_sentence_the_serial_suicider
+		icon = GFX_local_unknown
+		x = -21
+		y = 10
+		cost = 5
+
+		completion_reward = {
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.1
+			}
+			prerequisite = {
+				focus = POL_lepper_option
+			}
+		}
+	}
+	focus = {
+		id = POL_lepper_didnt_kill_himself
+		icon = GFX_local_unknown
+		x = -19
+		y = 10
+		cost = 3.6
+		completion_reward = {
+			add_war_support = 0.1
+		}
+		prerequisite = {
+			focus = POL_lepper_option
+		}
+	}
+	focus = {
+		id = POL_delegalize_the_popis
+		icon = GFX_local_unknown
+		x = -17
+		y = 10
+		cost = 5
+		prerequisite = {
+			focus = POL_lepper_option
+		}
+		completion_reward = {
+			add_popularity = {
+				ideology = democratic
+				popularity = -0.35
+			}
+			add_ideas = POL_popis_delegalized
+		}
+	}
+	focus = {
+		id = POL_wszystkich_won
+		icon = GFX_local_unknown
+		x = -21
+		y = 11
+		cost = 5
+		completion_reward = {
+			add_stability = 0.05
+		}
+		prerequisite = {
+			focus = POL_sentence_the_serial_suicider
+		}
+	}
+	focus = {
+		id = POL_jail_wasik_and_kaminski
+		icon = GFX_local_unknown
+		x = -19
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = POL_lepper_didnt_kill_himself
+		}
+	}
+	focus = {
+		id = POL_finish_the_seksafera
+		icon = GFX_local_unknown
+		x = -17
+		y = 11
+		cost = 5
+		prerequisite = {
+			focus = POL_delegalize_the_popis
+		}
+	}
+	focus = {
+		id = POL_abw_reforms
+		icon = GFX_local_unknown
+		x = -21
+		y = 12
+		cost = 2.9
+		prerequisite = {
+			focus = POL_wszystkich_won
+		}
+	}
+	focus = {
+		id = POL_friends_from_moscow
+		icon = GFX_local_unknown
+		x = -19
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = POL_jail_wasik_and_kaminski
+		}
+	}
+	focus = {
+		id = POL_finish_the_soil_afera
+		icon = GFX_local_unknown
+		x = -17
+		y = 12
+		cost = 5
+		prerequisite = {
+			focus = POL_finish_the_seksafera
+		}
+	}
+	focus = {
+		id = POL_we_dont_trust_the_eu
+		icon = GFX_local_unknown
+		x = -19
+		y = 13
+		cost = 10
+		prerequisite = {
+			focus = POL_abw_reforms
+			focus = POL_friends_from_moscow
+			focus = POL_finish_the_soil_afera
+		}
+	}
+
 	focus = {
 		id = POL_pis_option
 		icon = GFX_local_unknown
@@ -364,7 +492,6 @@ focus_tree = {
 			focus = POL_konfa_option
 			focus = POL_kamraci_option
 		}
-
 	}
 	focus = {
 		id = POL_konfa_option
@@ -405,9 +532,6 @@ focus_tree = {
 		x = 1
 		y = 8
 		cost = 0
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_sejm_final_meeting
 		}
@@ -487,9 +611,6 @@ focus_tree = {
 		x = 8
 		y = 8
 		cost = 0
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_sejm_final_meeting
 		}
@@ -509,9 +630,6 @@ focus_tree = {
 		x = 10
 		y = 8
 		cost = 0
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_sejm_final_meeting
 		}
@@ -531,9 +649,6 @@ focus_tree = {
 		x = 12
 		y = 8
 		cost = 0
-		available = {
-			always = no
-		}
 		prerequisite = {
 			focus = POL_sejm_final_meeting
 		}

@@ -61,8 +61,8 @@ characters = {
 
 	# MOD COUNTRY LEADERS
 
-	POL_sejm = {
-		name="Sejm RP"
+	POL_zgromadzenie = {
+		name="Zgromadzenie Narodowe"
 		portraits = {
 		}
 		country_leader = {
