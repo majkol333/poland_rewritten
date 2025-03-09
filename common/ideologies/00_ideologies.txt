@@ -15,6 +15,8 @@ ideologies = {
 
 			populism = {
 			}
+			
+			# MOD
 
 			euro_liberalism = {
 			}
@@ -96,6 +98,8 @@ ideologies = {
 
 			anarchist_communism = {
 			}
+
+			# MOD
 
 			potato_dicatorship = {
 			}
@@ -224,6 +228,8 @@ ideologies = {
 			centrism = {
 			}
 
+			# MOD
+			
 			libertarianism = {
 			}
 

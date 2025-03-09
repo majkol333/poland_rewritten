@@ -79,7 +79,7 @@ characters = {
 		}
 		country_leader = {
 			ideology = lepperism
-			traits = {}
+			traits = { mod_agrarian_tribune mod_populist }
 			expire="1965.1.1.1"
 			id=-1
 		}
@@ -102,7 +102,7 @@ characters = {
 		portraits = {
 		}
 		country_leader = {
-			ideology = lepperism
+			ideology = kaczism
 			traits = {}
 			expire="1965.1.1.1"
 			id=-1
@@ -116,6 +116,42 @@ characters = {
 		country_leader = {
 			ideology = kaczism
 			traits = {}
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_donald_tusk = {
+		name="Donald Tusk"
+		portraits = {
+		}
+		country_leader = {
+			ideology = euro_liberalism
+			traits = { }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_janusz_korwin_mikke = {
+		name="Janusz Korwin-Mikke"
+		portraits = {
+		}
+		country_leader = {
+			ideology = korwinism
+			traits = { }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+
+	POL_wojciech_olszanski = {
+		name="Wojciech Olszański"
+		portraits = {
+		}
+		country_leader = {
+			ideology = fascism_ideology
+			traits = { }
 			expire="1965.1.1.1"
 			id=-1
 		}

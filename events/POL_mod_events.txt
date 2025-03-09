@@ -50,7 +50,7 @@ country_event = {
 
 	option = {
 		name = POL_mod_events.2.o1
-		hidden_effect = {
+		effect = {
 			set_politics = {
 				ruling_party = democratic
 			}
@@ -66,6 +66,7 @@ country_event = {
 				name = "KSiS"
 			}
 			promote_character = POL_zgromadzenie
+			set_cosmetic_tag = POL_IIIRP
 		}
 		
 	}

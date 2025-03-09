@@ -339,11 +339,18 @@ focus_tree = {
 			focus = POL_kamraci_option
 		}
 		completion_reward = {
-			promote_character = POL_andzrej_lepper
+			create_country_leader = {
+				name = "Andrzej Lepper"
+				desc = ""
+				picture = GFX_local_unknown
+				expire = "1965.1.1"
+				ideology = lepperism
+				traits = { mod_agrarian_tribune mod_populist }
+			}
 			set_party_name = {
 				ideology = communism
 				long_name = "Samoobrona Rzeczypospolitej Polskiej"
-				name = "Samoobrona RP"
+				name = "SRP"
 			}
 			set_politics = { ruling_party = communism }
 			add_popularity = {
@@ -351,7 +358,57 @@ focus_tree = {
 				popularity = 0.2
 			}
 			add_stability = 0.10
+
+			hidden_effect = {
+				set_party_name = {
+					ideology = democratic
+					long_name = "Platforma Obywatelska"
+					name = "PO"
+				}
+				set_party_name = {
+					ideology = neutrality
+					long_name = "Konfederacja Wolność i Niepodległość"
+					name = "KWiN"
+				}
+				set_party_name = {
+					ideology = fascism
+					long_name = "Rodacy Kamraci"
+					name = "RK"
+				}
+				add_popularity = { # kamraci nie mają tyle poparcia xd
+					ideology = fascism
+					popularity = -0.1
+				}
+				add_country_leader_role = {
+					character = POL_donald_tusk
+					promote_leader = yes
+					country_leader = {
+					  ideology = euro_liberalism
+					  expire = "1965.1.1.1"
+					  traits = {}
+					}
+				}
+				add_country_leader_role = {
+					character = POL_janusz_korwin_mikke
+					promote_leader = yes
+					country_leader = {
+					  ideology = korwinism
+					  expire = "1965.1.1.1"
+					  traits = {}
+					}
+				}
+				add_country_leader_role = {
+					character = POL_wojciech_olszanski
+					promote_leader = yes
+					country_leader = {
+					  ideology = fascism_ideology
+					  expire = "1965.1.1.1"
+					  traits = {}
+					}
+				}
+			}
 		}
+		
 
 	}
 	focus = {
